@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     LazyColumn(contentPadding = innerPadding) {
                         items(sampleBooks) { book ->
                             Text(
-                                text = "${book.title} — ${book.author}",
+                                text = "${book.title} - ${book.author}",
                                 modifier = Modifier.padding(16.dp),
                             )
                         }
