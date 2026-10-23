@@ -18,3 +18,4 @@ for task 2 I ve added versions on version catalog ;
   kotlinx-coroutines-test
 - Reflection: two different versions of the same lib → Gradle forces one (usually highest),
   risking NoSuchMethodError / untested behavior. Catalog keeps only one version for all. 
+- followed the instructions for task 3 and moved the book.kts to inside of the module then  checked the dependencies synced it and then run the app again it took 14 s to compile.

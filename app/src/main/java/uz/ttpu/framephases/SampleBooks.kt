@@ -1,5 +1,7 @@
 package uz.ttpu.framephases
 
+import uz.ttpu.framephases.core.model.Book
+
 val sampleBooks = listOf(
     Book("b1", "Kotlin in Action", "Dmitry Jemerov", 3500),
     Book("b2", "Clean Architecture", "Robert C. Martin", 3200),

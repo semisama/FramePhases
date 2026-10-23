@@ -1,4 +1,4 @@
-package uz.ttpu.framephases
+package uz.ttpu.framephases.core.model
 
 data class Book(
     val id : String,
