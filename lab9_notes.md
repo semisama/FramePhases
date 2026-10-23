@@ -19,3 +19,4 @@ for task 2 I ve added versions on version catalog ;
 - Reflection: two different versions of the same lib → Gradle forces one (usually highest),
   risking NoSuchMethodError / untested behavior. Catalog keeps only one version for all. 
 - followed the instructions for task 3 and moved the book.kts to inside of the module then  checked the dependencies synced it and then run the app again it took 14 s to compile.
+- for task 4 followed the instructions again and saw that if an information is private to the module we cannot acces it from the app , it wont bring the import action . 
