@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "FramePhases"
 include(":app")
 include(":core:model")
+include(":core:util")
