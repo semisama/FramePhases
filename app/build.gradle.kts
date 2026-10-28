@@ -56,5 +56,7 @@ dependencies {
     implementation(project(":data:books-api"))
     implementation(project(":data:books-impl"))
     implementation(project(":data:orders"))
+    implementation(project(":feature:catalog"))
+
 
 }

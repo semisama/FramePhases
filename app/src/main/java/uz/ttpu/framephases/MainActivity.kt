@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import uz.ttpu.framephases.core.ui.BookCard
 import uz.ttpu.framephases.core.ui.FramePhasesTheme
 import uz.ttpu.framephases.data.books.impl.BooksDataModule
+import uz.ttpu.framephases.feature.catalog.CatalogRoute
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,11 +23,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FramePhasesTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LazyColumn(contentPadding = innerPadding) {
-                        items(sampleBooks) { book -> BookCard(book = book) }
-                    }
-                }
+                CatalogRoute(
+                    repository = BooksDataModule.provideRepository(),
+                    onBookClick = { bookId -> /* no-op for now */ },
+                )
             }
         }
     }

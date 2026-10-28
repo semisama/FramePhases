@@ -68,4 +68,12 @@ task9 corestrings
 - api vs impl ; api is the interface and impl is the implementation of the interface. api is used by the core util module and impl is used by the app module. api is used to decouple the core util module from the app module.
 - task12  ; created the oprders library and aadded the files. Orders has one fake implementation, so interface + internal fake + module object live together in one module.
 - task13  , verified internal blocks bypassing the abstraction. only app may depend on the impl module, and only core util may depend on the api module. The app module cannot depend on the api module directly, and the core util module cannot depend on the impl module directly. The app module can only depend on the core util module, and the core util module can only depend on the api module. The impl module can only depend on the api module. The api module can only depend on the core model module. The core model module can only depend on nothing.
-- task 14 
+- task 14 new module testing is created and added the test data to it. then added the dependency to the core model module. then added the test cases to the core util module and used the test data from the testing module. then ran the tests and they passed. then added the dependency to the app module and used the test data from the testing module. then ran the app and it worked. then removed the dependency to the testing module from the app module and ran the app again and it still worked. then removed the dependency to the testing module from the core util module and ran the tests again and they still passed. then removed the dependency to the testing module from the core model module and ran the tests again and they still passed. then removed the dependency to the testing module from the books-api module and ran the tests again and they still passed. then removed the dependency to the testing module from the books-impl module and ran the tests again and they still passed. then removed the dependency to the testing module from the orders module and ran the tests again and they still passed.
+- task15,16
+- Created :feature:catalog (Android Library + Compose).
+- Added CatalogRoute(repository, onBookClick) placeholder.
+- Wired into MainActivity via BooksDataModule.provideRepository().
+- Fixed: missing kotlin.compose plugin alias caused "Compose Compiler Gradle plugin required" error.
+- Fixed: placeholder file initially created in src/test instead of src/main.
+- Confirmed: button/list behavior is expected (placeholder has no real UI yet).
+- 
