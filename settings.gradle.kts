@@ -30,3 +30,4 @@ include(":core:ui")
 
 include(":data:books-api")
 include(":data:books-impl")
+include(":data:orders")
