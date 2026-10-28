@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import uz.ttpu.framephases.core.ui.BookCard
 import uz.ttpu.framephases.core.ui.FramePhasesTheme
+import uz.ttpu.framephases.data.books.impl.BooksDataModule
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

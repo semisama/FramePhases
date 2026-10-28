@@ -53,5 +53,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
     implementation(project(":core:ui"))
+    implementation(project(":data:books-api"))
+    implementation(project(":data:books-impl"))
+    implementation(project(":data:orders"))
 
 }
