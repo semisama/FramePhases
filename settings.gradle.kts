@@ -27,3 +27,6 @@ include(":app")
 include(":core:model")
 include(":core:util")
 include(":core:ui")
+
+include(":data:books-api")
+include(":data:books-impl")

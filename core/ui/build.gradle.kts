@@ -9,7 +9,7 @@ android {
         version = release(37)
     }
     buildFeatures{
-        compose = true
+       compose = true
     }
     defaultConfig {
         minSdk = 24
