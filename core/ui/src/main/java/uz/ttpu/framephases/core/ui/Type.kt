@@ -1,4 +1,4 @@
-package uz.ttpu.framephases.ui.theme
+package uz.ttpu.framephases.core.ui
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
